@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainrel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    tools:context=".activity.ServiceDetailActivity">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/toolbar" />
+
+    <com.serviceonwheel.ui.MyTextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="--------\n--------\n--------\n--------"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+    <com.serviceonwheel.ui.NonShippableViewPager
+        android:id="@+id/pagerService"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBTNS"
+        android:layout_below="@+id/tvDesc" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBTNS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+        <ProgressBar
+            android:id="@+id/progressCount"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/backBTN"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/progressCount"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_backgrond"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/progressCount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_backgrond"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nextBTN"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/progressCount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_backgrond"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Service On Wheel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="press_again_exit_app">Press again to exit from the app</string>
+    <string name="prefrence_file_name">user_detail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="login_msg">Sign in into Service on wheel account and\nget access to your all bookings.</string>
+    <string name="opt_text">We are sending OTP to validate your\nmobile number. Hang on!</string>
+    <string name="version_code">v %s</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_booking">Bookings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_rate">Rate Us</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="menu_notification">Notification</string>
+
+    <string name="rs">\u20B9</string>
+
+    <string name="toolbar_myaccount">My Account</string>
+    <string name="toolbar_contactus">Contact Us</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_aboutus">About Us</string>
+    <string name="toolbar_booking">My Bookings</string>
+    <string name="toolbar_refer">Invite Friends</string>
+    <string name="toolbar_notification">Notification</string>
+    <string name="toolbar_coupons">Coupons</string>
+    <string name="toolbar_change_password">Change Password</string>
+
+    <string name="Delete_booking">DELETE BOOKING</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

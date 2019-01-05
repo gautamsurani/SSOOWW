@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/retry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/retry_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/retry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/retry_icon"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="No Data Found"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/aboutus_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/aboutus_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/aboutus_icon"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/aboutus_icon"
+                android:layout_toRightOf="@+id/aboutus_icon"
+                android:text="@string/version_code"
+                android:textColor="#00a4d8" />
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/aboutus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_icon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="About Service On Wheel "
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/aboutus_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="- - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - -"
+                android:textSize="16dp" />
+
+            <ListView
+                android:id="@+id/aboutus_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape1"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutus_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Follow Us" />
+
+            <ImageView
+                android:id="@+id/about_us_facebookshare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/about_us_twittershare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/about_us_facebookshare"
+                android:layout_marginLeft="12dp"
+                android:layout_toEndOf="@+id/about_us_facebookshare"
+                android:layout_toRightOf="@+id/about_us_facebookshare"
+                android:background="@drawable/twitter" />
+
+
+            <ImageView
+                android:id="@+id/about_us_googleplusshare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/about_us_twittershare"
+                android:layout_marginLeft="12dp"
+                android:layout_toEndOf="@+id/about_us_twittershare"
+                android:layout_toRightOf="@+id/about_us_twittershare"
+                android:background="@drawable/googleplus" />
+
+            <ImageView
+                android:id="@+id/about_us_instagramshare"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/about_us_googleplusshare"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="30dp"
+                android:layout_toEndOf="@+id/about_us_googleplusshare"
+                android:layout_toRightOf="@+id/about_us_googleplusshare"
+                android:background="@drawable/instagram" />
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

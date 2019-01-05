@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_bannerhelp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.serviceonwheel.ui.MyEditText
+                                android:id="@+id/edtName"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Your name"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/material_grey_800"
+                                android:textColorHint="@color/colorhint"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.serviceonwheel.ui.MyEditText
+                                android:id="@+id/edtEmail"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Email address"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/material_grey_800"
+                                android:textColorHint="@color/colorhint"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.serviceonwheel.ui.MyEditText
+                                android:id="@+id/edtPhone"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:hint="Phone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/material_grey_800"
+                                android:textColorHint="@color/colorhint"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.serviceonwheel.ui.MyEditText
+                                android:id="@+id/edtMsg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:hint="Message"
+                                android:inputType="textMultiLine"
+                                android:lines="3"
+                                android:maxLines="5"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/material_grey_800"
+                                android:textColorHint="@color/colorhint"
+                                android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSubmitComplaint"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="SUBMIT"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LLRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/expandableButton1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="#673AB7"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:onClick="expandableButton1"
+                            android:paddingRight="10dp"
+                            android:text="How to use Services"
+                            android:textColor="#fff" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableButton1"
+                            android:background="#673AB7"
+                            android:padding="16dp"
+                            app:ael_duration="900"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvRow1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:minLines="25"
+                                android:text="As per your city current services will be shown initially. If you want to check services for another state or city, you can select the state and city as per your need. After selection of state city you can press the Book Now Button showing on the services as per the services you required. After Book you get the respective description for the service, there are types or subtypes for some services so you have to do the right selection for that. Also please read the note shown in service. After right selection of types or subtypes respective amount will be shown you have to press the continue button after that the final booking page will be shown where you have to enter the address and service date and time. If you have coupon you can enter there and after that you can submit the details and finally the booking will be happened"
+                                android:textColor="#FFFFFF" />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/expandableButton2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableLayout1"
+                            android:background="#2196f3"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:onClick="expandableButton2"
+                            android:paddingRight="10dp"
+                            android:text="How to use Coupons"
+                            android:textColor="#fff" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/expandableButton2"
+                            android:background="#2196f3"
+                            android:padding="16dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvRow2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minLines="15"
+                                android:text="After the selection of the service you will be redirect on the final booking page where you will be ask for the coupon, if you have any pending or latest coupon you can enter there code, so that your booking amount will be decrease with respect to the coupon amount."
+                                android:textColor="#FFFFFF" />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/expandableButton3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableLayout2"
+                            android:background="#009688"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:onClick="expandableButton3"
+                            android:paddingRight="10dp"
+                            android:text="How to Refer and Earn"
+                            android:textColor="#fff" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/expandableButton3"
+                            android:background="#009688"
+                            android:padding="16dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvRow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minLines="10"
+                                android:text="You will see the option on drawer Refer and Earn on clicking refer you will get the list of the system apps where you want to share the app, afetr the sucessfull completion of installation you will be awarded by 50rs coupon."
+                                android:textColor="#FFFFFF" />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/expandableButton4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableLayout2"
+                            android:background="#3d30af"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:onClick="expandableButton4"
+                            android:paddingRight="10dp"
+                            android:text="How to Refer and Earn"
+                            android:textColor="#fff" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/expandableButton3"
+                            android:background="#3d30af"
+                            android:padding="16dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvRow4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minLines="10"
+                                android:text="You will see the option on drawer Refer and Earn on clicking refer you will get the list of the system apps where you want to share the app, afetr the sucessfull completion of installation you will be awarded by 50rs coupon."
+                                android:textColor="#FFFFFF" />
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/expandableButton5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/expandableLayout2"
+                            android:background="#96004e"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:onClick="expandableButton5"
+                            android:paddingRight="10dp"
+                            android:text="How to Refer and Earn"
+                            android:textColor="#fff" />
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandableLayout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/expandableButton3"
+                            android:background="#96004e"
+                            android:padding="16dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_interpolator="accelerate"
+                            app:ael_orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvRow5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minLines="10"
+                                android:text="You will see the option on drawer Refer and Earn on clicking refer you will get the list of the system apps where you want to share the app, afetr the sucessfull completion of installation you will be awarded by 50rs coupon."
+                                android:textColor="#FFFFFF" />
+
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

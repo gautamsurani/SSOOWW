@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTime"
+    android:layout_width="120dp"
+    android:layout_height="34dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/unselected_time_bg">
+
+    <com.serviceonwheel.ui.MyTextView
+        android:id="@+id/tvtime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="2:30 - 3 pm"
+        android:textColor="@color/color_hint"
+        android:textSize="14sp" />
+
+</LinearLayout>

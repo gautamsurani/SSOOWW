@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDate"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_gravity="center"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/empty_otp_edit_text"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.serviceonwheel.ui.MyTextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sun"
+        android:textColor="@color/color_hint"
+        android:textSize="14sp" />
+
+    <com.serviceonwheel.ui.MyTextView
+        android:visibility="gone"
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="04"
+        android:textColor="@color/color_hint"
+        android:textSize="28sp" />
+
+</LinearLayout>
